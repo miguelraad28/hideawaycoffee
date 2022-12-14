@@ -1,0 +1,54 @@
+@import "./partials/navbar.scss";
+@import "./partials/aboutUs.scss";
+@import "./partials/findUs.scss";
+@import "./partials/header.scss";
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;500;600&family=Dancing+Script:wght@400;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+*{
+    font-family: 'Barlow', sans-serif;
+    scroll-behavior: smooth;
+}
+#root{
+    margin: 0 5%;
+}
+body{
+    position: relative;
+    padding-bottom: calc(80px + 2em);
+}
+section{
+    max-width: 1200px;
+    margin: auto;
+}
+#aboutUs, #findUs{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    h2{
+        width: 270px;
+        padding: 15px;
+        margin-bottom: 0;
+        border-bottom: 3px solid black;
+    }
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    p{
+        margin-bottom: 0;
+    }
+    i{
+        color: white;
+        margin: 5px;
+        font-size: 1.5em;
+        &:hover{
+            color: rgb(199, 199, 199);
+        }
+    }
+
+}
